@@ -15,6 +15,7 @@ use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\RecommendationController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\StoreController;
 use App\Http\Controllers\TikTokViewController;
 use App\Http\Controllers\MapController;
 use App\Http\Controllers\AvailabilityController;
@@ -87,6 +88,9 @@ Route::get('/map', [MapController::class, 'index'])->name('map.index');
 // Public job routes
 Route::get('/jobs', [JobController::class, 'index'])->name('jobs.index');
 Route::get('/jobs/{job}', [JobController::class, 'show'])->name('jobs.show');
+
+// Public store routes (Dropshipping)
+Route::get('/store', [StoreController::class, 'index'])->name('store.index');
 
 // Public profile routes
 Route::get('/profiles', [ProfileController::class, 'index'])->name('profiles.index');
