@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Theme System */
+:root {
+    /* Dark Theme (Default) */
+    --bg-primary: #131314;
+    --bg-secondary: #1f2023;
+    --text-primary: #e8eaed;
+    --text-secondary: #bdc1c6;
+    --accent: #8ab4f8;
+    --border: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(42, 45, 50, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+.light {
+    /* Light Theme */
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --text-primary: #202124;
+    --text-secondary: #5f6368;
+    --accent: #1a73e8;
+    --border: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+/* Liquid Glass Effect */
+@layer components {
+    .liquid-glass {
+        background-color: var(--glass-bg);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-radius: 16px;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Navigation Links */
+    .nav-link {
+        @apply px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200;
+        color: var(--text-secondary);
+    }
+    
+    .nav-link:hover {
+        color: var(--text-primary);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Glass hover effect */
+    .bg-glass-hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .dark .bg-glass-hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .light .bg-glass-hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Buttons */
+    .btn-primary {
+        @apply px-6 py-3 rounded-lg font-medium transition-all duration-200;
+        background-color: var(--accent);
+        color: white;
+    }
+    
+    .btn-primary:hover {
+        @apply scale-105;
+        box-shadow: 0 0 20px rgba(138, 180, 248, 0.3);
+    }
+    
+    .btn-secondary {
+        @apply px-6 py-3 rounded-lg font-medium border transition-all duration-200;
+        color: var(--text-primary);
+        border-color: var(--border);
+    }
+    
+    .btn-secondary:hover {
+        background-color: var(--glass-bg);
+    }
+    
+    /* Form Elements */
+    .input-field {
+        @apply px-4 py-3 rounded-lg border transition-colors duration-200;
+        background-color: var(--glass-bg);
+        border-color: var(--border);
+        color: var(--text-primary);
+    }
+    
+    .input-field:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(138, 180, 248, 0.1);
+    }
+    
+    .input-field::placeholder {
+        color: var(--text-secondary);
+    }
+    
+    /* Hover effects */
+    .hover-glow {
+        @apply transition-all duration-300 ease-in-out;
+    }
+    
+    .hover-glow:hover {
+        @apply scale-105;
+        box-shadow: 0 0 20px rgba(138, 180, 248, 0.3);
+    }
+    
+    /* Scroll snap for TikTok-style scrolling */
+    .snap-container {
+        scroll-snap-type: y mandatory;
+        -webkit-overflow-scrolling: touch;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    
+    .snap-item {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Text Colors */
+    .text-primary {
+        color: var(--text-primary);
+    }
+    
+    .text-secondary {
+        color: var(--text-secondary);
+    }
+    
+    .text-accent {
+        color: var(--accent);
+    }
+}
+
+/* Base styles */
+@layer base {
+    body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        @apply font-sans antialiased transition-colors duration-300;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: var(--bg-secondary);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent);
+        opacity: 0.8;
+    }
+}

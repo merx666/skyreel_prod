@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://skyreel.art/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /storage/
+Disallow: /vendor/
+
+# Allow important pages
+Allow: /
+Allow: /profiles
+Allow: /jobs
+Allow: /portfolios
+Allow: /profile
