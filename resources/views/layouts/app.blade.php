@@ -184,9 +184,9 @@
 
     <!-- Google Analytics & AdSense: ładowane przez Cookie Consent z Consent Mode -->
 </head>
-<body class="antialiased">
+<body class="antialiased bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 min-h-screen transition-colors duration-300">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 liquid-glass">
+    <nav class="fixed top-0 left-0 right-0 z-50 liquid-glass backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -207,6 +207,7 @@
                         <a href="{{ route('portfolios.discover') }}" class="nav-link">Odkrywaj</a>
                          <a href="{{ route('recommendations.index') }}" class="nav-link">Rekomendacje</a>
                          <a href="{{ route('jobs.index') }}" class="nav-link">Zlecenia</a>
+                        <a href="{{ route('store.index') }}" class="nav-link font-semibold text-accent hover:text-accent/80 transition-colors">Sklep</a>
                         <a href="{{ route('profiles.index') }}" class="nav-link">Operatorzy</a>
                         <a href="{{ route('search.index') }}" class="nav-link">Wyszukiwanie</a>
                         <a href="https://buy.stripe.com/dRm4gy5Yd09P61w3dA4gg00" class="btn-primary" target="_blank" rel="noopener noreferrer">Wesprzyj</a>
