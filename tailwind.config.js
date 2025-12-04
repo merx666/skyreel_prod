@@ -15,48 +15,23 @@ export default {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
             },
+            textColor: {
+                primary: 'var(--text-primary)',
+                secondary: 'var(--text-secondary)',
+                accent: 'var(--accent)',
+            },
+            backgroundColor: {
+                primary: 'var(--bg-primary)',
+                secondary: 'var(--bg-secondary)',
+                accent: 'var(--accent)',
+            },
+            borderColor: {
+                DEFAULT: 'var(--border)',
+                glass: 'var(--glass-border)',
+            },
             colors: {
-                // Główne kolory dla Tailwind
-                'primary': '#e8eaed',
-                'secondary': '#bdc1c6',
-                'accent': '#8ab4f8',
-                'glass-border': 'rgba(255, 255, 255, 0.1)',
-                'glass-hover': 'rgba(255, 255, 255, 0.1)',
-                
-                // Motyw ciemny (domyślny)
-                dark: {
-                    bg: {
-                        primary: '#131314',
-                        secondary: '#1f2023',
-                    },
-                    accent: '#8ab4f8',
-                    text: {
-                        primary: '#e8eaed',
-                        secondary: '#bdc1c6',
-                    },
-                    border: 'rgba(255, 255, 255, 0.1)',
-                    glass: {
-                        bg: 'rgba(42, 45, 50, 0.6)',
-                        border: 'rgba(255, 255, 255, 0.1)',
-                    },
-                },
-                // Motyw jasny
-                light: {
-                    bg: {
-                        primary: '#f8f9fa',
-                        secondary: '#ffffff',
-                    },
-                    accent: '#1a73e8',
-                    text: {
-                        primary: '#202124',
-                        secondary: '#5f6368',
-                    },
-                    border: 'rgba(0, 0, 0, 0.1)',
-                    glass: {
-                        bg: 'rgba(255, 255, 255, 0.6)',
-                        border: 'rgba(0, 0, 0, 0.1)',
-                    },
-                },
+                // Zachowujemy accent jako ogólny kolor, jeśli potrzebny
+                accent: 'var(--accent)',
             },
             backdropBlur: {
                 'liquid': '24px',
