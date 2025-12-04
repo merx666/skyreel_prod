@@ -92,6 +92,16 @@ Route::get('/jobs/{job}', [JobController::class, 'show'])->name('jobs.show');
 // Public store routes (Dropshipping)
 Route::get('/store', [StoreController::class, 'index'])->name('store.index');
 
+// Checkout Routes
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::post('/checkout/{product}', [App\Http\Controllers\CheckoutController::class, 'checkout'])->name('checkout');
+    Route::get('/checkout/success', [App\Http\Controllers\CheckoutController::class, 'success'])->name('checkout.success');
+    Route::get('/checkout/cancel', [App\Http\Controllers\CheckoutController::class, 'cancel'])->name('checkout.cancel');
+});
+
+// Stripe Webhook
+Route::post('/stripe/webhook', [App\Http\Controllers\WebhookController::class, 'handleWebhook'])->name('cashier.webhook');
+
 // Public profile routes
 Route::get('/profiles', [ProfileController::class, 'index'])->name('profiles.index');
 Route::get('/profiles/{profile}', [ProfileController::class, 'show'])->name('profiles.show');
@@ -236,3 +246,8 @@ Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show'])
 Route::get('/debug-log', [DebugController::class, 'log'])
     ->name('debug.log')
     ->middleware('throttle:5,1');
+
+// Admin Routes
+Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified', 'admin'])->group(function () {
+    Route::resource('products', \App\Http\Controllers\Admin\ProductController::class);
+});

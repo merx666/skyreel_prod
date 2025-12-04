@@ -218,6 +218,14 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     /**
+     * Check if the user is an admin.
+     */
+    public function isAdmin(): bool
+    {
+        return $this->is_admin === true || $this->role === 'admin';
+    }
+
+    /**
      * Get the user's average rating.
      */
     public function getAverageRating(): float
