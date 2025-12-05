@@ -184,9 +184,9 @@
 
     <!-- Google Analytics & AdSense: ładowane przez Cookie Consent z Consent Mode -->
 </head>
-<body class="antialiased bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 min-h-screen transition-colors duration-300">
+<body class="antialiased bg-primary min-h-screen transition-colors duration-300">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 liquid-glass backdrop-blur-md border-b border-white/10">
+    <nav class="fixed top-0 left-0 right-0 z-50 liquid-glass backdrop-blur-md border-b border-glass">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->

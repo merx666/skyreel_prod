@@ -18,13 +18,13 @@
 
 .light {
     /* Light Theme */
-    --bg-primary: #f8f9fa;
+    --bg-primary: #f0f2f5;
     --bg-secondary: #ffffff;
     --text-primary: #202124;
     --text-secondary: #5f6368;
     --accent: #1a73e8;
     --border: rgba(0, 0, 0, 0.1);
-    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-bg: rgba(255, 255, 255, 0.8);
     --glass-border: rgba(0, 0, 0, 0.1);
 }
 
