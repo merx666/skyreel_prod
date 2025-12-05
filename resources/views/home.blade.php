@@ -71,13 +71,13 @@
     </section>
 
     <!-- Dlaczego SkyReel Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#131314]">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary transition-colors duration-300">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white mb-4">
+                <h2 class="text-3xl font-bold text-primary mb-4">
                     {{ __('Dlaczego SkyReel?') }}
                 </h2>
-                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                <p class="text-lg text-secondary max-w-3xl mx-auto">
                     {{ __('Jesteśmy wiodącą platformą łączącą profesjonalnych operatorów dronów z klientami poszukującymi wysokiej jakości usług z powietrza.') }}
                 </p>
             </div>
@@ -89,32 +89,32 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">{{ __('Zweryfikowani Operatorzy') }}</h3>
-                    <p class="text-gray-300">
+                    <h3 class="text-xl font-semibold text-primary mb-2">{{ __('Zweryfikowani Operatorzy') }}</h3>
+                    <p class="text-secondary">
                         {{ __('Wszyscy operatorzy na naszej platformie przechodzą proces weryfikacji, aby zapewnić najwyższą jakość usług. Sprawdzamy uprawnienia, doświadczenie i portfolio każdego operatora.') }}
                     </p>
                 </div>
                 
-                <div class="liquid-glass p-6 rounded-2xl border border-gray-700/40 shadow-2xl transition hover:shadow-blue-500/20">
+                <div class="liquid-glass p-6 rounded-2xl border border-glass shadow-2xl transition hover:shadow-blue-500/20">
                     <div class="text-blue-500 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">{{ __('Bezpieczne Płatności') }}</h3>
-                    <p class="text-gray-300">
+                    <h3 class="text-xl font-semibold text-primary mb-2">{{ __('Bezpieczne Płatności') }}</h3>
+                    <p class="text-secondary">
                         {{ __('Nasza platforma zapewnia bezpieczne transakcje między klientami a operatorami. Płatność jest zwalniana dopiero po zatwierdzeniu wykonanej usługi, co gwarantuje zadowolenie obu stron.') }}
                     </p>
                 </div>
                 
-                <div class="liquid-glass p-6 rounded-2xl border border-gray-700/40 shadow-2xl transition hover:shadow-blue-500/20">
+                <div class="liquid-glass p-6 rounded-2xl border border-glass shadow-2xl transition hover:shadow-blue-500/20">
                     <div class="text-blue-500 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">{{ __('System Ocen i Recenzji') }}</h3>
-                    <p class="text-gray-300">
+                    <h3 class="text-xl font-semibold text-primary mb-2">{{ __('System Ocen i Recenzji') }}</h3>
+                    <p class="text-secondary">
                         {{ __('Po każdym zleceniu klienci mogą ocenić operatora, co pomaga utrzymać wysoką jakość usług i ułatwia wybór odpowiedniego specjalisty do konkretnego projektu.') }}
                     </p>
                 </div>
@@ -123,40 +123,40 @@
     </section>
 
     <!-- O Nas Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#131314]">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary transition-colors duration-300">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white mb-4">
+                <h2 class="text-3xl font-bold text-primary mb-4">
                     {{ __('O SkyReel') }}
                 </h2>
-                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                <p class="text-lg text-secondary max-w-3xl mx-auto">
                     {{ __('Poznaj naszą misję i dowiedz się, jak zrewolucjonizowaliśmy rynek usług dronowych w Polsce.') }}
                 </p>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h3 class="text-2xl font-semibold text-white mb-4">{{ __('Nasza Misja') }}</h3>
-                    <p class="text-gray-300 mb-6">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">{{ __('Nasza Misja') }}</h3>
+                    <p class="text-secondary mb-6">
                         {{ __('SkyReel powstało z pasji do fotografii i filmowania z powietrza. Naszą misją jest stworzenie profesjonalnej platformy, która łączy wykwalifikowanych operatorów dronów z klientami poszukującymi wysokiej jakości materiałów z lotu ptaka.') }}
                     </p>
-                    <p class="text-gray-300 mb-6">
+                    <p class="text-secondary mb-6">
                         {{ __('Wierzymy, że perspektywa z powietrza otwiera zupełnie nowe możliwości w fotografii, filmowaniu, inspekcjach technicznych i wielu innych dziedzinach. Dlatego stworzyliśmy miejsce, gdzie profesjonaliści mogą prezentować swoje umiejętności, a klienci łatwo znajdą idealnego operatora do swojego projektu.') }}
                     </p>
-                    <h3 class="text-2xl font-semibold text-white mb-4">{{ __('Nasze Wartości') }}</h3>
-                    <ul class="list-disc pl-5 text-gray-300 mb-6">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">{{ __('Nasze Wartości') }}</h3>
+                    <ul class="list-disc pl-5 text-secondary mb-6">
                         <li class="mb-2">{{ __('Profesjonalizm - stawiamy na najwyższą jakość usług i materiałów') }}</li>
                         <li class="mb-2">{{ __('Bezpieczeństwo - wszyscy operatorzy posiadają niezbędne uprawnienia i ubezpieczenia') }}</li>
                         <li class="mb-2">{{ __('Innowacyjność - nieustannie rozwijamy platformę o nowe funkcje') }}</li>
                         <li>{{ __('Społeczność - budujemy aktywną społeczność pasjonatów dronów') }}</li>
                     </ul>
                 </div>
-                <div class="liquid-glass p-8 rounded-2xl border border-gray-700/40 shadow-2xl">
-                    <h3 class="text-2xl font-semibold text-white mb-4">{{ __('Dlaczego warto korzystać z SkyReel?') }}</h3>
+                <div class="liquid-glass p-8 rounded-2xl border border-glass shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">{{ __('Dlaczego warto korzystać z SkyReel?') }}</h3>
                     
                     <div class="mb-6">
-                        <h4 class="text-xl font-medium text-white mb-2">{{ __('Dla Klientów:') }}</h4>
-                        <ul class="list-disc pl-5 text-gray-300">
+                        <h4 class="text-xl font-medium text-primary mb-2">{{ __('Dla Klientów:') }}</h4>
+                        <ul class="list-disc pl-5 text-secondary">
                             <li class="mb-2">{{ __('Dostęp do sprawdzonych, profesjonalnych operatorów dronów') }}</li>
                             <li class="mb-2">{{ __('Możliwość przeglądania portfolio i ocen poprzednich klientów') }}</li>
                             <li class="mb-2">{{ __('Bezpieczny system płatności i komunikacji') }}</li>
@@ -165,8 +165,8 @@
                     </div>
                     
                     <div>
-                        <h4 class="text-xl font-medium text-white mb-2">{{ __('Dla Operatorów:') }}</h4>
-                        <ul class="list-disc pl-5 text-gray-300">
+                        <h4 class="text-xl font-medium text-primary mb-2">{{ __('Dla Operatorów:') }}</h4>
+                        <ul class="list-disc pl-5 text-secondary">
                             <li class="mb-2">{{ __('Profesjonalny profil i portfolio dostępne dla potencjalnych klientów') }}</li>
                             <li class="mb-2">{{ __('Dostęp do zleceń od klientów z całej Polski') }}</li>
                             <li class="mb-2">{{ __('Możliwość wyróżnienia swojego profilu i portfolio') }}</li>
@@ -179,64 +179,64 @@
     </section>
 
     <!-- How It Works Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#131314]">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary transition-colors duration-300">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white mb-4">
+                <h2 class="text-3xl font-bold text-primary mb-4">
                     {{ __('Jak to działa?') }}
                 </h2>
-                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                <p class="text-lg text-secondary max-w-3xl mx-auto">
                     {{ __('Proces korzystania z SkyReel jest prosty i intuicyjny. Oto jak możesz zacząć:') }}
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Step 1 -->
-                <div class="liquid-glass p-6 rounded-2xl border border-gray-700/40 shadow-2xl text-center">
+                <div class="liquid-glass p-6 rounded-2xl border border-glass shadow-2xl text-center">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500/20 text-blue-400 ring-1 ring-blue-400/30 mb-4">
                         <span class="text-2xl font-bold">1</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">{{ __('Zarejestruj się') }}</h3>
-                    <p class="text-gray-300">
+                    <h3 class="text-xl font-semibold text-primary mb-2">{{ __('Zarejestruj się') }}</h3>
+                    <p class="text-secondary">
                         {{ __('Utwórz konto jako klient poszukujący usług lub jako operator drona oferujący swoje umiejętności.') }}
                     </p>
                 </div>
                 
                 <!-- Step 2 -->
-                <div class="liquid-glass p-6 rounded-2xl border border-gray-700/40 shadow-2xl text-center">
+                <div class="liquid-glass p-6 rounded-2xl border border-glass shadow-2xl text-center">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500/20 text-blue-400 ring-1 ring-blue-400/30 mb-4">
                         <span class="text-2xl font-bold">2</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">
+                    <h3 class="text-xl font-semibold text-primary mb-2">
                         {{ __('Uzupełnij profil') }}
                     </h3>
-                    <p class="text-gray-300">
+                    <p class="text-secondary">
                         {{ __('Dodaj informacje o sobie, swoim doświadczeniu i sprzęcie (operatorzy) lub o swoich potrzebach (klienci).') }}
                     </p>
                 </div>
                 
                 <!-- Step 3 -->
-                <div class="liquid-glass p-6 rounded-2xl border border-gray-700/40 shadow-2xl text-center">
+                <div class="liquid-glass p-6 rounded-2xl border border-glass shadow-2xl text-center">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500/20 text-blue-400 ring-1 ring-blue-400/30 mb-4">
                         <span class="text-2xl font-bold">3</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">
+                    <h3 class="text-xl font-semibold text-primary mb-2">
                         {{ __('Przeglądaj i kontaktuj się') }}
                     </h3>
-                    <p class="text-gray-300">
+                    <p class="text-secondary">
                         {{ __('Przeglądaj dostępne zlecenia lub portfolio operatorów. Nawiąż kontakt i omów szczegóły projektu.') }}
                     </p>
                 </div>
                 
                 <!-- Step 4 -->
-                <div class="liquid-glass p-6 rounded-2xl border border-gray-700/40 shadow-2xl text-center">
+                <div class="liquid-glass p-6 rounded-2xl border border-glass shadow-2xl text-center">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500/20 text-blue-400 ring-1 ring-blue-400/30 mb-4">
                         <span class="text-2xl font-bold">4</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">
+                    <h3 class="text-xl font-semibold text-primary mb-2">
                         {{ __('Realizuj projekty') }}
                     </h3>
-                    <p class="text-gray-300">
+                    <p class="text-secondary">
                         {{ __('Finalizuj zlecenia, dokonuj bezpiecznych płatności i wystawiaj oceny po zakończonej współpracy.') }}
                     </p>
                 </div>
