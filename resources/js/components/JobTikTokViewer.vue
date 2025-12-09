@@ -376,7 +376,7 @@ onUnmounted(() => {
 }
 
 .btn-primary {
-  @apply bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent/90 transition-colors;
+  @apply bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors;
 }
 
 .btn-secondary {

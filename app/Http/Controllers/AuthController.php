@@ -66,7 +66,8 @@ class AuthController extends Controller
             return redirect()->intended('/dashboard');
             
         } catch (\Exception $e) {
-            return redirect('/login')->with('error', 'Wystąpił błąd podczas logowania przez Google.');
+            Log::error('Google Login Error: ' . $e->getMessage() . "\n" . $e->getTraceAsString());
+            return redirect('/login')->with('error', 'Wystąpił błąd podczas logowania przez Google: ' . $e->getMessage());
         }
     }
 
