@@ -28,7 +28,7 @@ class Conversation extends Model
     public function users(): BelongsToMany
     {
         return $this->belongsToMany(User::class, 'conversation_user')
-                    ->withPivot('joined_at', 'last_read_at')
+                    ->withPivot('last_read_at')
                     ->withTimestamps();
     }
 
@@ -65,7 +65,7 @@ class Conversation extends Model
     /**
      * Mark conversation as read for a specific user.
      */
-    public function markAsRead($userId)
+    public function markAsReadForUser($userId)
     {
         $this->users()->updateExistingPivot($userId, [
             'last_read_at' => now(),
